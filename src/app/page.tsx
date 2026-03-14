@@ -1,19 +1,28 @@
-import { DemoBanner } from "@/components/demo-banner";
-import { Hero } from "@/components/hero";
-import { Services } from "@/components/services";
-import { ChatWidget } from "@/components/chat-widget";
-import { Footer } from "@/components/footer";
+import { ChatProvider } from '@/context/ChatContext';
+import DemoBanner from '@/components/sections/DemoBanner';
+import Hero from '@/components/sections/Hero';
+import ChatShowcase from '@/components/sections/ChatShowcase';
+import Services from '@/components/sections/Services';
+import ParallaxReveal from '@/components/sections/ParallaxReveal';
+import HowItWorks from '@/components/sections/HowItWorks';
+import Testimonials from '@/components/sections/Testimonials';
+import BookingFooter from '@/components/sections/BookingFooter';
+import ChatWidget from '@/components/chat/ChatWidget';
 
 export default function Home() {
   return (
-    <>
+    <ChatProvider>
       <DemoBanner />
-      <main className="min-h-screen">
+      <main>
         <Hero />
+        <ChatShowcase />
         <Services />
+        <ParallaxReveal />
+        <HowItWorks />
+        <Testimonials />
+        <BookingFooter />
       </main>
-      <Footer />
       <ChatWidget />
-    </>
+    </ChatProvider>
   );
 }
