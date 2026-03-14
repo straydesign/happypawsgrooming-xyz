@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   description:
     'Happy Paws Grooming offers premium grooming services for dogs and cats. Bath & brush, full grooming, nail trims, de-shedding treatments, teeth brushing, and more. AI-powered booking assistant.',
   metadataBase: new URL('https://happypawsgrooming.xyz'),
+  verification: {
+    google: 'IfQi_yUeYT-nFOQmeg0_IAy9uwYHWtnOoE9g2DVo9tE',
+  },
   openGraph: {
     title: 'Happy Paws Grooming — Professional Pet Grooming Services',
     description:
